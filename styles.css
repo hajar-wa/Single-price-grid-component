@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: hsl(204, 43%, 93%);
+    font-family: "karla";
+    text-align: start;
+    
+}
+
+main{
+    width: 80%;
+}
+.header-section,
+.pricing-section,
+.features-section{
+    padding: 1rem 2rem;
+}
+/* header-section */
+.header-section{
+    padding: 1rem 2rem;
+    background-color: white;
+    margin: 8rem 0 0;
+}
+.header-title{
+    color: hsl(179, 62%, 43%);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.header-subtitle{
+    color: hsl(71, 67%, 52%);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.header-description{
+    color: hsl(218, 22%, 67%);
+    line-height: 1.5;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px hsl(204, 43%, 93%);
+}
+
+/* pricing-section */
+.pricing-section{
+    margin: 0;
+    background-color: hsl(179, 62%, 43%);
+    color: white; 
+}
+.pricing-title{
+    font-size: 1.2rem;
+}
+.pricing-amount{
+    font-weight: bold;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    margin: 0;
+
+}
+.pricing-period{
+    font-weight: normal;
+    font-size: 1.1rem;
+    margin-left: 1rem;
+    color: hsla(204, 43%, 93%, .4);
+}
+.pricing-info{
+    margin: 1rem 0;
+    color: hsla(204, 43%, 93%, .9);
+    font-size: 1.1rem;
+}
+.cta-button{
+    width: 100%;
+    padding: 1rem;
+    margin: 1.3rem 0;
+    color: white;
+    background-color: hsl(71, 67%, 52%);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    box-shadow: 1px 1px 9px hsl(179, 82%, 28%);
+}
+/* ABOUT US SECTION */
+.features-section{
+    background-color: hsl(179, 59%, 59%);
+    color: white;
+}
+.features-title{
+    font-size: 1.4rem;
+
+}
+.features-list{
+    color: rgb(214, 243, 242);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+@media (min-width: 700px) {
+    main{
+        min-height: 70%;
+        min-width: 700px;
+        max-width: 60%;
+        display: grid;
+        grid-template: auto 1fr / 1fr 1fr;
+
+        grid-template-areas:
+                        "header header"
+                        "right-side left-side"
+        ;
+
+    }
+    .header-section{
+        grid-area: header;
+        padding-bottom: 2rem;
+        margin: 0;
+    }
+    .header-title{
+        font-size: 2rem;
+    }
+    .header-subtitle{
+        font-size: 1.4rem;
+    }
+    .header-description{
+        /* width: 90%; */
+        font-size: 1.3rem;
+
+    }
+}
